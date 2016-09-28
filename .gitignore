@@ -1,0 +1,8 @@
+bower_components/
+
+node_modules/
+test/
+gulpfile.js
+package.json
+bower.json
+TODO.txt
