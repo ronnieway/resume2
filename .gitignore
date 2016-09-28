@@ -6,3 +6,5 @@ gulpfile.js
 package.json
 bower.json
 TODO.txt
+.eslintrc.js
+.gitignore
