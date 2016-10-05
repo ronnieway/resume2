@@ -1,0 +1,178 @@
+/* GENERAL */
+#theMainLeft {
+  padding: 1%;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0;
+}
+
+#theMainRight {
+  padding: 1%;
+  position: absolute;
+  width: 46%;
+  height: 100%;
+  right: 0%;
+}
+/* end GENERAL */
+/* EXPERIENCE */
+#myExperience {
+  padding: 0 0 5% 5%;
+}
+
+.experienceDiv {
+  padding: 2vh 2vw 5vh 0;
+  border-bottom: 2px dashed grey;
+}
+
+.experienceDiv a{
+  color: black;
+  text-decoration: none;
+}
+
+.experienceDiv a:hover {
+  text-decoration: underline;
+}
+
+.companyTitle {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.companyIcon {
+  margin: 0;
+  padding:0;
+  width: 2vw;
+  position:relative;
+  top:-0.5vh;
+}
+
+.companyIcon:hover {
+  background-color: white;
+  border-radius: 1vw;
+}
+
+.moreOpen {
+  display: block;
+}
+
+.moreA {
+  cursor:pointer;
+  margin-bottom: 2vh;
+  float:right;
+  color:$color-dark-main;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.moreA:hover {
+  text-decoration: underline;
+}
+/* end EXPERIENCE */
+
+/* EDUCATION */
+#myEducation {
+  padding: 0 0 5% 5%;
+}
+
+.educationDiv {
+  padding: 2vh 2vw 3vh 0;
+  border-bottom: 2px dashed grey;
+}
+
+.educationDiv a{
+  color: black;
+  text-decoration: none;
+}
+
+.educationDiv a:hover {
+  text-decoration: underline;
+}
+/* end EDUCATION */
+
+/* MOTTO */
+#myMotto {
+  padding:0 5% 5% 5%;
+  font-family: $handwriting-font-family;
+  font-size: 400%;
+  position:relative;
+  top: -3vh;
+}
+/* end MOTTO */
+
+/* PROJECTS */
+#myProjects {
+  padding: 0 0 5% 5%;
+}
+
+.projectDiv{
+  padding-bottom: 2vh;
+  margin-bottom: 2vh;
+  border-bottom: 2px dashed white;
+}
+
+.projectImage img {
+  border: 2px solid white;
+}
+
+.theProjectSkill {
+  border: 0;
+  border-radius: 5px;
+  background-color: $color-light-secondary;
+  padding: 2px 5px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px 10px 2px;
+}
+
+#moreB, #moreB a,#lessB, #lessB a {
+  cursor:pointer;
+  margin: 0 2vw 1vh 2vw;
+  width:100%;
+  float:right;
+  color:black;
+  text-decoration: none;
+  font-style: italic;
+  text-align: right;
+}
+
+#moreB a:hover, #lessB a:hover{
+  text-decoration: underline;
+}
+/* end PROJECTS */
+
+/* SKILLS */
+#mySkills {
+  padding: 0 0 5% 5%;
+}
+
+.theSkill {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: light-grey;
+  padding: 1px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+}
+/* end SKILLS */
+
+/* LANGUAGES */
+#myLanguages {
+  padding: 0 0 5% 5%;
+}
+
+.theLanguage {
+  padding: 5px;
+  font-size: 125%;
+}
+
+.cIcon {
+  margin: 0 0 0 -2%;
+  padding:0;
+  width: 1.8vw;
+  position:relative;
+  top:0;
+}
+/* end LANGUAGES */

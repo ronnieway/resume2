@@ -1,0 +1,28 @@
+body, h1, h2, h3, h4, h5, h6{
+  color: $color-dark-main;
+}
+
+p, li{
+  color: $color-dark-secondary;
+  padding: 1vh 0;
+}
+
+h1{
+  padding: 1vh 0;	
+}
+
+h2, h3 {
+  padding-left: 3%;
+}
+
+p {
+  line-height: 150%;
+}
+
+h2{
+	background:linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+p, li, a{
+	font-size: 16px;
+}

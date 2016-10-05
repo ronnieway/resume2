@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Resume</title>
-		<link rel="stylesheet" href="/bower_components/normalize-css/normalize.css">
-		<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
-		<link href="css/main.css" rel="stylesheet">
-	</head>
-	<body data-bind="style: { backgroundImage: background}">
-  
-<!-- inject:html -->
-		<section id="theMain">
+<section id="theMain">
 	<div id="theMainLeft">
 		<h2>My work experience</h2>
 		<div id="myExperience" data-bind="foreach: myExperience">
@@ -147,50 +133,3 @@
 		</div>
 	</div>   
 </section>
-		<section id="theFooter">
-
-</section>
-		<section id="theHeader">
-	<div>
-		<div id="theHeaderLeft">
-			<div id="myName" data-bind="text: myFullName">
-      			myFullName
-			</div>
-			<div id="myTitle" data-bind="text: myTitle">
-				myTitle
-			</div>
-		</div>
-		<div id="theHeaderCenter">
-			<div id="myContacts" data-bind="foreach: myContacts">
-				<div class ="theContact">
-					<div class='mainContactIcon'>
-						<img class="contactIcon" data-bind="attr: {src: icon}">
-					</div>
-					<div class='mainContactText'>
-						<a data-bind="attr: {href: link}, text: contact" target="_blank"></a>
-					</div>
-					<br>
-				</div>
-			</div>
-		    <div id="myAdditionalContacts" data-bind="foreach: myAdditionalContacts">			
-				<div class="additionalInfoDivFull" data-bind="attr: {id: 'additionalDiv'+$index()}, visible: showArray()[$index()], click: function (data, event) { event.stopPropagation(); }">
-					<span data-bind='text: type'></span><span>: </span><br><a data-bind="attr: {href: $data.link}, text: $data.contact"></a>
-				</div>
-				<img class="icon" data-bind="attr: {src: icon, id: 'additionalIcon'+$index()}, click: function (data, event) { showBox(data, event); event.stopPropagation(); }">
-			</div>
-		</div>
-		<div id="theHeaderRight">
-			<div id="myPhotoDiv">
-			<img id="myPhoto" data-bind="attr: {src: myPhoto}">
-			</div>
-		</div>
-	</div>
-</section>
-		<!-- endinject -->
-
-		<script src="/bower_components/jquery/dist/jquery.js"></script>
-		<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script src="/bower_components/knockout/dist/knockout.js"></script>         
-		<script src="js/main.js"></script>
-	</body>
-</html>

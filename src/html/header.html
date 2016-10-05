@@ -1,0 +1,36 @@
+<section id="theHeader">
+	<div>
+		<div id="theHeaderLeft">
+			<div id="myName" data-bind="text: myFullName">
+      			myFullName
+			</div>
+			<div id="myTitle" data-bind="text: myTitle">
+				myTitle
+			</div>
+		</div>
+		<div id="theHeaderCenter">
+			<div id="myContacts" data-bind="foreach: myContacts">
+				<div class ="theContact">
+					<div class='mainContactIcon'>
+						<img class="contactIcon" data-bind="attr: {src: icon}">
+					</div>
+					<div class='mainContactText'>
+						<a data-bind="attr: {href: link}, text: contact" target="_blank"></a>
+					</div>
+					<br>
+				</div>
+			</div>
+		    <div id="myAdditionalContacts" data-bind="foreach: myAdditionalContacts">			
+				<div class="additionalInfoDivFull" data-bind="attr: {id: 'additionalDiv'+$index()}, visible: showArray()[$index()], click: function (data, event) { event.stopPropagation(); }">
+					<span data-bind='text: type'></span><span>: </span><br><a data-bind="attr: {href: $data.link}, text: $data.contact"></a>
+				</div>
+				<img class="icon" data-bind="attr: {src: icon, id: 'additionalIcon'+$index()}, click: function (data, event) { showBox(data, event); event.stopPropagation(); }">
+			</div>
+		</div>
+		<div id="theHeaderRight">
+			<div id="myPhotoDiv">
+			<img id="myPhoto" data-bind="attr: {src: myPhoto}">
+			</div>
+		</div>
+	</div>
+</section>
